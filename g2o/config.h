@@ -1,8 +1,8 @@
 #ifndef G2O_CONFIG_H
 #define G2O_CONFIG_H
 
-#define G2O_HAVE_OPENGL 1
-#define G2O_OPENGL_FOUND 1
+//#define G2O_HAVE_OPENGL 1
+//#define G2O_OPENGL_FOUND 1
 /* #undef G2O_OPENMP */
 #define G2O_SHARED_LIBS 1
 #define G2O_LGPL_SHARED_LIBS 1
@@ -11,7 +11,7 @@
 #define G2O_HAVE_CHOLMOD 1
 #define G2O_HAVE_CSPARSE 1
 
-#define G2O_CXX_COMPILER "GNU /usr/bin/c++"
+//#define G2O_CXX_COMPILER "GNU /usr/bin/c++"
 
 // give a warning if Eigen defaults to row-major matrices.
 // We internally assume column-major matrices throughout the code.
