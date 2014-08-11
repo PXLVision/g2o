@@ -30,19 +30,23 @@ namespace g2o {
 
       void computeError();
 
+      virtual void setMeasurement(const Vector7d& m){
+        _measurement = m;
+      }
+
       virtual void setMeasurement(const Line3D& m){
         _measurement.head<6>() = Line3D(m);
 	_measurement(6) = 1;
       }
 
       virtual bool setMeasurementData(const double* d){
-        Map<const Vector7d> v(d);
+        Eigen::Map<const Vector7d> v(d);
         _measurement = v;
         return true;
       }
 
       virtual bool getMeasurementData(double* d) const{
-        Map<Vector7d> v(d);
+        Eigen::Map<Vector7d> v(d);
         v = _measurement;
         return true;
       }

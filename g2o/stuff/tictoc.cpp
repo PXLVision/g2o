@@ -35,6 +35,7 @@
 #include <algorithm>
 #include <vector>
 #include <cstdio>
+#include <cstdlib>
 
 namespace g2o {
 
